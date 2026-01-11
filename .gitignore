@@ -4,3 +4,7 @@
 /policies
 /worker_models
 /__pycache__
+*.xlsx
+*.xlsm
+*.csv
+*.parquet
