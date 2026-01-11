@@ -1,0 +1,29 @@
+# Paths
+model_name: "CU08_Pri_20260107_v1.9.5.xlsm"
+scenario_csv: "base_scen.csv"
+policy_csv: "policies_2.csv"
+
+models_dir: "models"
+scenario_dir: "parameters"
+policy_dir: "policies"
+outputs_dir: "outputs"
+
+# Execution
+num_workers: 6
+mode: "per_policy"  # or "portfolio"
+
+# Retry settings (for COM errors)
+max_retries: 3        # Number of retry attempts on COM error
+initial_delay: 2      # Initial delay in seconds (increases exponentially)
+
+# Excel input ranges
+scenario_input_range: "I7:T7"
+policy_input_range: "I3:T3"
+scalar_output_range: "X11:AA11"
+ps_output_range: "I3:I1083"
+
+# VBA
+vba_macro: "Module5.RunScenarios_WithProfitSignature"
+
+# Output
+run_name: "test_2"
